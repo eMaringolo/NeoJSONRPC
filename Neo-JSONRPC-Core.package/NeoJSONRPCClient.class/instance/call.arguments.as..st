@@ -12,7 +12,7 @@ call: methodName arguments: args as: schema
 	response := schema isNil
 		ifTrue: [ reader next ]
 		ifFalse: [ (reader mappingFor: schema ifAbsent: [  ])
-				ifNil: [ (schema isKindOf: NeoJSONObject)
+				ifNil: [ (schema isKindOf: self defaultMapClass)
 						ifTrue: [ reader mapClass: schema.
 							reader next ]
 						ifFalse: [ self raiseUnsupportedSchemaError: schema ] ]
