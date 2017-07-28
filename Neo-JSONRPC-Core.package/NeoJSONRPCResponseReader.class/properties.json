@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "EstebanMaringolo 7/27/2017 22:18",
+	"super" : "NeoJSONReader",
+	"category" : "Neo-JSONRPC-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"response",
+		"resultSchema"
+	],
+	"name" : "NeoJSONRPCResponseReader",
+	"type" : "normal"
+}

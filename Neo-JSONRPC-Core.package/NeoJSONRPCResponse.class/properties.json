@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "EstebanMaringolo 7/27/2017 22:23",
+	"super" : "NeoJSONObject",
+	"category" : "Neo-JSONRPC-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NeoJSONRPCResponse",
+	"type" : "normal"
+}
