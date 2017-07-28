@@ -1,3 +1,3 @@
 private-errors
 raiseJsonRpcBadResponse: jsonObject
-	^(LtJsonRpcClientError new errorJson: jsonObject) signal
+	^(NeoJSONRPCResponseError new errorJson: jsonObject) signal
