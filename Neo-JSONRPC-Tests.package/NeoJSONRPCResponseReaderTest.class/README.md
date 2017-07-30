@@ -1,1 +1,0 @@
-I test different uses  of NeoJSONRPCResponseReader.
