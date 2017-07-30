@@ -10,5 +10,9 @@ baseline: spec
 						className: #ConfigurationOfNeoJSON;
 						versionString: #stable;
 						repository: 'http://mc.stfx.eu/Neo' ].
-			spec package: #'Neo-JSONRPC-Core'.
-			spec group: 'default' with: #('Neo-JSONRPC-Core') ]
+			spec
+				package: #'Neo-JSONRPC-Core'
+				with: [ spec requires: 'NeoJSON' ].
+			spec
+				group: 'default'
+				with: #('Neo-JSONRPC-Core') ]
