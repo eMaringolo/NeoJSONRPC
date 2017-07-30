@@ -1,3 +1,3 @@
-actions
+private
 defaultMapClass
 	^ NeoJSONObject

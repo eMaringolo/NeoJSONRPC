@@ -1,4 +1,4 @@
-actions
+private
 buildRequestEntityForMethod: methodName arguments: args
 	| requestDict |
 	requestDict := {('jsonrpc' -> self version).
@@ -6,7 +6,7 @@ buildRequestEntityForMethod: methodName arguments: args
 	('id' -> self generateId)} asDictionary.
 	args isEmptyOrNil
 		ifFalse: [ requestDict at: 'params' put: args ].
-	^ (ZnEntity type: ZnMimeType applicationJson)
+	^ (ZnEntity stringEntityClass type: ZnMimeType applicationJson)
 		string: (NeoJSONWriter toString: requestDict);
 		encoder: (ZnCharacterEncoder newForEncoding: 'UTF-8');
 		yourself
