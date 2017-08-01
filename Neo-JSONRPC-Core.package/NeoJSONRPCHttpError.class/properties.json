@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ZnHttpUnsuccessful",
+	"category" : "Neo-JSONRPC-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NeoJSONRPCHttpError",
+	"type" : "normal"
+}
